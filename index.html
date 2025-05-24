@@ -3,35 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Equity Valuation Quiz</title>
+    <title>Simple Quiz</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="quiz-container">
-        <h1>Equity Valuation Quiz</h1>
         <div id="question-area">
-            <p id="question-header"></p>
-            <p id="question-text"></p>
-            <div class="options" id="options-container">
-                </div>
-            <div id="feedback"></div>
-            <div class="navigation-buttons">
-                <button id="prev-btn" style="display: none;">Previous</button>
-                <button id="next-btn">Next</button>
-                <button id="submit-quiz-btn" style="display: none;">Submit Quiz</button>
-            </div>
-        </div>
-
-        <div id="results-area" style="display: none;">
-            <h2>Quiz Complete!</h2>
-            <p>You scored <span id="final-score"></span> out of <span id="total-questions"></span>.</p>
-            <button id="restart-btn">Restart Quiz</button>
-            <h3>Review Your Answers:</h3>
-            <div id="answer-review">
+            <h2 id="question-text">Question will appear here...</h2>
+            <div id="options-container">
                 </div>
         </div>
+        <button id="next-btn">Next Question</button>
+        <div id="feedback-area" class="feedback"></div>
     </div>
 
+    <script src="questions.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
